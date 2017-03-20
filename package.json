@@ -1,0 +1,33 @@
+{
+  "name": "response2json-cli",
+  "version": "1.0.0",
+  "description": "The command line interface for response2json",
+  "bin": {
+    "response2json": "bin/response2json"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/jest"
+  },
+  "repository": "git+https://github.com/sydev/response2json-cli.git",
+  "keywords": [
+    "json",
+    "http",
+    "request",
+    "response",
+    "cli"
+  ],
+  "author": "Dominik Winter <dominik.winter92@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sydev/response2json-cli/issues"
+  },
+  "homepage": "https://github.com/sydev/response2json-cli#readme",
+  "dependencies": {
+    "response2json": "^1.0.3",
+    "yargs": "^7.0.1"
+  },
+  "devDependencies": {
+    "execa": "^0.6.2",
+    "jest": "^19.0.2"
+  }
+}

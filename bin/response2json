@@ -1,0 +1,39 @@
+#! /usr/bin/env node
+
+(() => {
+  'use strict';
+
+  const request2json = require('response2json');
+
+  const argv = require('yargs')
+    .usage('$0 [args] <urls>')
+    .option('o', {
+      alias: 'output-file',
+      default: 'response.json',
+      describe: 'The file to write output in',
+      type: 'string'
+    })
+    .option('p', {
+      alias: 'pretty-print',
+      describe: 'Make the generated JSON-File humanreadable',
+      type: 'boolean'
+    })
+    .demandCommand(1, 'You need at least one url to fetch')
+    .help()
+    .locale('en')
+    .argv;
+
+
+  // Set the options
+  let options = {
+    output_file: argv.outputFile,
+    pretty_print: argv.prettyPrint
+  };
+
+  request2json(argv._, options)
+    .then(filepath => {
+      console.log(`Saved request(s) in ${filepath}`);
+    })
+    .catch(err => console.error(err));
+
+})();
