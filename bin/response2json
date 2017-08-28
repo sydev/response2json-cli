@@ -13,6 +13,13 @@
       describe: 'The file to write output in',
       type: 'string'
     })
+    .options('f', {
+      alias: 'format',
+      default: 'json',
+      describe: 'The ouput format',
+      choices: ['json', 'array'],
+      type: 'string'
+    })
     .option('p', {
       alias: 'pretty-print',
       describe: 'Make the generated JSON-File humanreadable',
@@ -27,6 +34,7 @@
   // Set the options
   let options = {
     output_file: argv.outputFile,
+    format: argv.format,
     pretty_print: argv.prettyPrint
   };
 

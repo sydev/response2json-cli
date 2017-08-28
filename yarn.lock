@@ -1738,9 +1738,9 @@ resolve@^1.2.0:
   dependencies:
     path-parse "^1.0.5"
 
-response2json@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/response2json/-/response2json-1.0.3.tgz#a35120cb640585e3bc81e7613b827e06d3d1edf3"
+response2json@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/response2json/-/response2json-1.1.0.tgz#82272f76f73f3777ca18610a9e98ad7627dd11a1"
   dependencies:
     fs-promise "^2.0.0"
     request "^2.34"

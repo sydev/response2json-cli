@@ -1,6 +1,6 @@
 {
   "name": "response2json-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The command line interface for response2json",
   "bin": {
     "response2json": "bin/response2json"
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/sydev/response2json-cli#readme",
   "dependencies": {
-    "response2json": "^1.0.3",
+    "response2json": "^1.1.0",
     "yargs": "^7.0.1"
   },
   "devDependencies": {
